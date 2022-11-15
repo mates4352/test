@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.de959c7a.css",
-    "main.js": "/test/static/js/main.2143235f.js",
+    "main.css": "/test/static/css/main.d76e0f6a.css",
+    "main.js": "/test/static/js/main.2dc574c4.js",
     "static/js/787.28cb0dcd.chunk.js": "/test/static/js/787.28cb0dcd.chunk.js",
     "static/media/logo-card.svg": "/test/static/media/logo-card.c66fbe939e929b5642e4104f453e7e84.svg",
     "static/media/tel-popup-1.png": "/test/static/media/tel-popup-1.277344c39ce4b242c3f2.png",
@@ -30,12 +30,12 @@
     "static/media/arrow-red.svg": "/test/static/media/arrow-red.2b3badeae7048aedfd64.svg",
     "index.html": "/test/index.html",
     "static/media/ellipse.svg": "/test/static/media/ellipse.0743176d220656ae6e74.svg",
-    "main.de959c7a.css.map": "/test/static/css/main.de959c7a.css.map",
-    "main.2143235f.js.map": "/test/static/js/main.2143235f.js.map",
+    "main.d76e0f6a.css.map": "/test/static/css/main.d76e0f6a.css.map",
+    "main.2dc574c4.js.map": "/test/static/js/main.2dc574c4.js.map",
     "787.28cb0dcd.chunk.js.map": "/test/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de959c7a.css",
-    "static/js/main.2143235f.js"
+    "static/css/main.d76e0f6a.css",
+    "static/js/main.2dc574c4.js"
   ]
 }
