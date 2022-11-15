@@ -1,0 +1,99 @@
+@import './../../../assets/style';
+
+.card {
+  max-width: 250px;
+  width: 100%;
+
+  @include media(max, lg) {
+    width: 100%;
+    min-width: 152px;
+    max-width: 255px;
+  }
+
+  @include media(max, md) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.wrap {
+  position: relative;
+  margin-bottom: 16px;
+
+  @include media(max, xl) {
+    margin-bottom: 8px;
+  }
+}
+
+.image {
+  width: 212px;
+  height: 352px;
+  object-fit: cover;
+
+  @include media(max, xl) {
+    width: 133px;
+    height: 222px;
+  }
+}
+
+.discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 98px;
+  height: 98px;
+
+  @include media(max, xl) {
+    top: 13px;
+    right: 21px;
+
+    width: 88px;
+    height: 88px;
+  }
+
+  @include media(max, lg) {
+    right: 0;
+    width: 68px;
+    height: 68px;
+  }
+
+  @include media(max, 640px) {
+    left: 100px;
+    right: unset;
+  }
+}
+
+.title {
+  margin-bottom: 8px;
+  color: var(--brand_1);
+  text-transform: lowercase;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  height: 38px;
+  margin-bottom: 32px;
+  color: var(--text);
+  text-transform: lowercase;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  @include media(max, xl) {
+    max-width: 150px;
+    margin-bottom: 16px;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.button {
+  max-width: 173px;
+}

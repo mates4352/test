@@ -1,0 +1,55 @@
+@import './../../../assets/style';
+
+.popupInput {
+  width: 100%;
+  box-shadow: 0 5px 15px var(--interface);
+  overflow: hidden;
+
+}
+
+.wrap {
+  padding: 5px 8px 19px 16px;
+}
+
+.text {
+  padding-top: 10px;
+  align-self: flex-start;
+  margin-bottom: var(--sp-m);
+  color: var(--dark);
+}
+
+.banner {
+  padding: 0 40px 40px;
+
+  @include media(max, lg) {
+    padding: 0 30px 30px;
+  }
+
+  @include media(max, lg) {
+    padding: 0 30px 165px;
+  }
+}
+
+.list {
+  display: grid;
+  grid-auto-rows: var(--minmax);
+  row-gap: 7px;
+  max-height: 200px;
+
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--dark);
+    border-radius: 2px;
+  }
+}
+
+.item {
+
+}
+

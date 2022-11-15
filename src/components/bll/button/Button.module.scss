@@ -1,0 +1,28 @@
+@import './../../../assets/style';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 113px;
+  width: 100%;
+  height: 35px;
+
+  color: var(--brand_1);
+
+  background-color: var(--brand_3);
+  border: 1px solid var(--brand_1);
+  border-radius: 40px;
+
+  transition: background-color 300ms ease, color 300ms ease;
+
+  &:hover {
+    color: var(--brand_3);
+    background-color: var(--brand_1);
+  }
+}
+
+.buttonActive {
+  color: var(--brand_3);
+  background-color: var(--brand_1);
+}

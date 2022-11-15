@@ -1,0 +1,22 @@
+:root {
+  --sp-xxl: 80px;
+  --sp-xl: 64px;
+  --sp-l: 48px;
+  --sp-m: 40px;
+  --sp-xs: 24px;
+  --sp-xxs: 16px;
+  --sp-xxxs: 8px;
+
+  @include media(max, xl) {
+    --sp-xxl: 64px;
+    --sp-xl:48px;
+    --sp-l: 40px;
+  }
+
+  @include media(max, lg) {
+    --sp-l: 32px;
+    --sp-m: 32px;
+    --sp-xs: 16px;
+    --sp-xxs: 8px;
+  }
+}

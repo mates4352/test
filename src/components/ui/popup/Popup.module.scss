@@ -1,0 +1,99 @@
+@import './../../../assets/style';
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @include media(max, lg) {
+    padding: 20px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 13px;
+  height: 13px;
+
+  @include media(max, xl) {
+    top: 15px;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--dark);
+
+    transition: background-color 300ms ease;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      background-color: var(--brand_1);
+    }
+  }
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--popup-bg);
+}
+
+.body {
+  position: relative;
+
+  max-width: 1062px;
+  width: 100%;
+  margin: auto;
+
+  background-color: var(--brand_3);
+  border-radius: 32px;
+
+  @include media(max, xl) {
+    max-width: 688px;
+  }
+
+  @include media(max, lg) {
+    min-width: 240px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,62 @@
+@import './../../../../assets/style';
+
+.content {
+  width: 100%;
+}
+
+.cardMain {
+  @include media(max, lg) {
+    justify-self: center;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: var(--minmax) var(--minmax);
+  justify-content: space-between;
+  column-gap: 90px;
+  overflow: hidden;
+  padding: 32px;
+  cursor: pointer;
+
+  @include media(max, 1279px) {
+    column-gap: 50px;
+  }
+
+  @include media(max, 1139px) {
+    padding: 32px 8px 50px 8px;
+  }
+
+  @include media(max, lg) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    column-gap: 16px;
+    row-gap: 90px;
+    padding: 8px 0 50px 8px;
+    overflow: unset;
+  }
+
+  @include media(max, 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.listCard2 {
+  justify-content: unset;
+  grid-template-columns: var(--minmax) 1fr;
+
+  @include media(max, 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  width: 100%;
+}
+
+.itemCard2 {
+  max-width: 555px;
+}
+
+
+

@@ -1,0 +1,54 @@
+@import './../../assets/style';
+
+.buttonBack {
+  position: fixed;
+  top: 40px;
+  left: 80px;
+  z-index: 100000000;
+
+  @include media(max, xl) {
+    left: 40px;
+  }
+
+  @include media(max, lg) {
+    top: 32px;
+    left: 20px;
+  }
+}
+
+.recommendation {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  max-width: 630px;
+  margin-bottom: var(--sp-xxl);
+  text-align: center;
+
+  @include media(max, xl) {
+    max-width: 435px;
+  }
+
+  @include media(max, lg) {
+    max-width: 295px;
+    margin-bottom: var(--sp-l);
+    font-family: DINPro-Bold;
+  }
+}
+
+.wrap {
+  max-width: 894px;
+  width: 100%;
+}
+
+.inputSearch {
+  margin-bottom: var(--sp-xxs);
+
+  @include media(max, lg) {
+    margin-bottom: var(--sp-xl);
+  }
+}

@@ -1,0 +1,45 @@
+@import './../../../assets/style';
+
+.linkProduct {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 755px;
+  width: 100%;
+}
+
+.wrap {
+
+}
+
+.title {
+  margin-bottom: 4px;
+  color: var(--dark);
+  text-transform: lowercase;
+  transition: color 300ms ease;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  color: var(--text);
+  text-transform: lowercase;
+  transition: color 300ms ease;
+}
+
+.linkProduct:hover {
+
+  .title {
+    color: var(--brand_1);
+  }
+
+  .text {
+    color: var(--brand_1);
+  }
+}
+
+.image {
+  height: 70px;
+}

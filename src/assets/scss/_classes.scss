@@ -1,0 +1,120 @@
+.container {
+  max-width: calc(var(--container-width) + (var(--container-padding) * 2));
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.slick-list {
+  max-width: 860px;
+
+  @include media(max, 1439px) {
+    max-width: 615px;
+  }
+
+  @include media(max, xl) {
+    max-width: 400px;
+  }
+
+  @include media(max, 640px) {
+    max-width: 583px;
+  }
+}
+
+.slick-slide > div {
+}
+
+.slick-vertical .slick-slide {
+  width: 100% !important;
+}
+.slick-track {
+
+  @include media(max, 640px) {
+    height: 100% !important;
+  }
+}
+
+
+.slick-prev {
+  position: relative;
+  width: 32px !important;
+  height: 32px !important;
+  left: -35px !important;
+  z-index: 1000000;
+  display: none !important;
+
+  @include media(max, 1139px) {
+    left: 0 !important;
+    top: unset !important;
+    bottom: -70px !important;
+  }
+
+  @include media(max, 640px) {
+    left: unset;
+    right: 25% !important;
+    top: unset !important;
+    bottom: -70px !important;
+  }
+
+  &::before {
+    content: '' !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 32px;
+    height: 32px;
+
+    background: url('./../images/slick-srrow.svg') no-repeat center center/100%;
+  }
+}
+
+.slick-next {
+  position: relative;
+  width: 32px !important;
+  height: 32px !important;
+  right: 15px !important;
+  z-index: 1000000;
+
+  @include media(max, 1439px) {
+    right: 45px !important;
+  }
+
+  @include media(max, 1139px) {
+    right: 55px !important;
+  }
+
+  @include media(max, xl) {
+    right: 25px !important;
+  }
+
+  @include media(max, lg) {
+    display: none !important;
+  }
+
+  &::before {
+    content: '' !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-180deg);
+
+    width: 32px;
+    height: 32px;
+
+    background: url('./../images/slick-srrow.svg') no-repeat center center/100%;
+  }
+}

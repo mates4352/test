@@ -1,0 +1,15 @@
+@import './../../../assets/style';
+
+.footer {
+  width: 100%;
+  padding-top: var(--sp-l);
+  padding-bottom: var(--sp-m);
+  margin-top: var(--sp-xxl);
+
+  background-color: var(--dark);
+
+  @include media(max, xl) {
+    margin-top: var(--sp-l);
+    padding-bottom: var(--sp-xs);
+  }
+}

@@ -1,0 +1,66 @@
+@import './../../../../../assets/style';
+
+.title {
+  margin-bottom: var(--sp-xxs);
+  color: var(--brand_3);
+
+  @include media(max, lg) {
+    margin-bottom: var(--sp-xs);
+  }
+}
+
+.text {
+  margin-bottom: var(--sp-xl);
+  color: var(--brand_3);
+
+  @include media(max, lg) {
+    margin-bottom: var(--sp-l);
+  }
+}
+
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--minmax);
+  align-items: center;
+  column-gap: 86px;
+  margin-bottom: var(--sp-xxl);
+
+  @include media(max, lg) {
+    grid-auto-flow: row;
+    row-gap: 24px;
+    margin-bottom: var(--sp-l);
+  }
+}
+
+.item {
+
+}
+
+.link {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--minmax);
+  align-items: center;
+  column-gap: 8px;
+
+  color: var(--brand_3);
+
+  transition: color 300ms ease;
+
+  &:hover {
+    color: var(--brand_1);
+  }
+}
+
+.iconPhone {
+  display: flex;
+  width: 16px;
+  height: 16px;
+}
+
+.iconEmail {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}

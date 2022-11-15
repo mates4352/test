@@ -1,0 +1,62 @@
+@import './../../../../../assets/style';
+
+.wrap {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, var(--minmax));
+  align-items: center;
+  column-gap: 48px;
+  margin-bottom: var(--sp-xxxs);
+
+  @include media(max, lg) {
+    grid-template-columns: repeat(2, var(--minmax));
+    column-gap: 8px;
+    row-gap: 4px;
+  }
+}
+
+.item {
+  position: relative;
+}
+
+.link {
+  position: relative;
+  color: var(--brand_3);
+
+  transition: color 300ms ease;
+
+  &:hover {
+    color: var(--brand_1);
+  }
+}
+
+.item:nth-of-type(1) .link,
+.item:nth-of-type(3) .link {
+  @include media(max, lg) {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      right: -5px;
+
+      width: 2px;
+      height: 60%;
+
+      background-color: currentColor;
+    }
+  }
+}
+
+.copyright {
+  margin-bottom: var(--sp-xxs);
+  color: var(--brand_3);
+}
+
+.text {
+  color: var(--brand_3);
+}

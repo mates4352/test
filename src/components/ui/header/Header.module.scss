@@ -1,0 +1,25 @@
+@import './../../../assets/style';
+
+.header {
+
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 163px;
+  height: 56px;
+
+  @include media(max, xl) {
+    width: 140px;
+    height: 48px;
+  }
+
+  @include media(max, lg) {
+    width: 93px;
+    height: 32px;
+  }
+}
