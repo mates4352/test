@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.26d3217b.css",
-    "main.js": "/test/static/js/main.5f5bf9cf.js",
+    "main.css": "/test/static/css/main.ebb689b8.css",
+    "main.js": "/test/static/js/main.16f1d503.js",
     "static/js/787.28cb0dcd.chunk.js": "/test/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo-card.svg": "/test/static/media/logo-card.c66fbe939e929b5642e4104f453e7e84.svg",
     "static/media/tel-popup-1.png": "/test/static/media/tel-popup-1.277344c39ce4b242c3f2.png",
     "static/media/tel-popup-3.png": "/test/static/media/tel-popup-3.6b225e0d7ccd86e94e9f.png",
     "static/media/tel-popup-2.png": "/test/static/media/tel-popup-2.e6cb46c7aa98f991a080.png",
@@ -30,12 +29,12 @@
     "static/media/arrow-red.svg": "/test/static/media/arrow-red.2b3badeae7048aedfd64.svg",
     "index.html": "/test/index.html",
     "static/media/ellipse.svg": "/test/static/media/ellipse.0743176d220656ae6e74.svg",
-    "main.26d3217b.css.map": "/test/static/css/main.26d3217b.css.map",
-    "main.5f5bf9cf.js.map": "/test/static/js/main.5f5bf9cf.js.map",
+    "main.ebb689b8.css.map": "/test/static/css/main.ebb689b8.css.map",
+    "main.16f1d503.js.map": "/test/static/js/main.16f1d503.js.map",
     "787.28cb0dcd.chunk.js.map": "/test/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26d3217b.css",
-    "static/js/main.5f5bf9cf.js"
+    "static/css/main.ebb689b8.css",
+    "static/js/main.16f1d503.js"
   ]
 }
